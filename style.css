@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+  } 
+  body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+    background: #000;
+  }
+  .slider-wrapper{
+    overflow:hidden;
+    max-width: 700px;
+    margin: 0 70px 55px;
+  }
+  .card-list .card-item {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    user-select: none;
+    padding:35px;
+    border-radius: 8px;
+    backdrop-filter: blur(30px);
+    background: rgba(255,255,255,0.2);
+    border: 1px solid rgba(255,255,255,0.5);
+  }
+  .card-list .card-item .Skill-image{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    margin-bottom: 40px;
+    border: 3px solid #fff;
+    padding: 4px;
+  }
+  .card-list .card-item .skill-para{
+    font-size: 1.15rem;
+    color: #e3e3e3;
+    font-weight:500;
+    margin: 14px 0 40px;
+  }
+  .card-list .card-item .message-button{
+    font: size 1.25rem;
+    padding: 10px 35px;
+    color:#030728;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    border: 1px solid transparent;
+    background:#fff;
+    transition: 0.2s ease;
+  }
+  .card-list .card-item .message-button:hover{
+    background:rgba(255, 255,255,0.1);
+    border: 1px solid #fff;
+    color: #fff;
+  }
+  .slider-wrapper .swiper-pagination-bullet{
+    background: #fff;
+    height: 15px;
+    width:15px;
+  }
+  .slider-wrapper .swiper-slide-button {
+    color: #fff;
+    margin-top:-50px;
+  }
+  .slider-wrapper .swiper-slide-button:hover{
+    color:#4658ff;
+  }
+
+  @media (max-width:768px) {
+    .slider-wrapper{
+      margin: 0 10px 40px;
+    }
+    .slider-wrapper .swiper-slide-button{
+      display: none;
+    }
+  }
